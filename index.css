@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #1A0F0A;
+    color: #F5E6D3;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A0F0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A2016;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Subtle gold shimmer */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5E6D3 0%, #D4AF37 45%, #C5A059 75%, #F5E6D3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.gold-button {
+  background-color: #D4AF37;
+  color: #1A0F0A;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+.gold-button:hover {
+  background-color: #F5E6D3;
+  color: #1A0F0A;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+  transform: translateY(-1px);
+}
+
+.gold-button-outline {
+  background: transparent;
+  color: #D4AF37;
+  border: 1px solid #D4AF37;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+.gold-button-outline:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+  color: #F5E6D3;
+  border-color: #F5E6D3;
+}
+
+.card-action-button {
+  background-color: #1A0F0A;
+  border: 1px solid rgba(197, 160, 89, 0.25);
+  color: #D4AF37;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+.card-action-button:hover {
+  background-color: #D4AF37;
+  color: #1A0F0A;
+  border-color: #D4AF37;
+}
+
+.chocolate-card {
+  background-color: #26140D;
+  border: 1px solid rgba(197, 160, 89, 0.18);
+  transition: all 0.3s ease-in-out;
+}
+.chocolate-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.08);
+}
+
