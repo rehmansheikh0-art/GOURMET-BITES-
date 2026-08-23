@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StoreProvider, useStore } from './context/StoreContext';
+import { StoreProvider, useStore } from './StoreContext';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CinematicAdSection } from './components/CinematicAdPlayer';
